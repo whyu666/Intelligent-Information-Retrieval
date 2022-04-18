@@ -122,16 +122,70 @@ void query (string s) { //查询s是否存在于倒排索引表中
     }
 }
 
+bool flag1[20], flag2[20], f;
+
+void query(string s1, string s2, int size) {
+    for (int i = 0; i <= 20; i++) {
+        flag1[i] = false;
+        flag2[i] = false;
+    }
+    f = false;
+    map<string, set<int>>::iterator it;
+    it = indexList.find(s1);
+    if (it != indexList.end()) {
+        set<int> sec = it->second;
+        set<int> ::iterator it2;
+        set<int> ::iterator it2End;
+        it2 = sec.begin();
+        it2End = sec.end();
+        while (it2 != it2End) {
+            flag1[*it2] = true;
+            it2++;
+        }
+    }
+    else {
+        cout << s1 << "没有在文档中出现" << endl;
+        f = true;
+    }
+    it = indexList.find(s2);
+    if (it != indexList.end()) {
+        set<int> sec = it->second;
+        set<int> ::iterator it2;
+        set<int> ::iterator it2End;
+        it2 = sec.begin();
+        it2End = sec.end();
+        while (it2 != it2End) {
+            flag2[*it2] = true;
+            it2++;
+        }
+    }
+    else {
+        cout << s2 << "没有在文档中出现" << endl;
+        f = true;
+    }
+    if (!f) {
+        cout << s1 << "和" << s2 << "共同出现的文档docID:";
+        for (int i = 1; i <= size; i++) {
+            if(flag1[i] && flag2[i]) {
+                cout << i << " ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 int main() {
     makeDocs(Docs); //生成文档集
     showDocs(); //输出文档集
     index(Docs); //建立倒排索引表
     showIndexList(indexList); //输出倒排索引表
-    for(int i = 0; i < 2; i++) {
-        cout << "请输入查询词：";
-        string s;
-        cin >> s;
-        query(s); //查询该词是否在倒排索引表中
-        cout << endl;
-    }
+    string s1, s2;
+    cout << "请输入第一个查询词：";
+    cin >> s1;
+    cout << "请输入第二个查询词：";
+    cin >> s2;
+    int size = Docs.size();
+    query(s1, s2, size); //查询这两个词是否在倒排索引表中
+    cout << endl;
+    return 0;
 }
