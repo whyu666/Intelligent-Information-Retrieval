@@ -1,0 +1,15 @@
+An international team led by Chinese scientists has successfully produced the youngest human cells in vitro, which may pave the way for advances in organ regeneration.
+
+The study published Tuesday in the journal Nature announced the discovery of a rapid, controllable method to convert stem cells into bona fide 8-cell embryo-like cells, without relying on genetic engineering.
+
+A team of researchers from China, Britain and Bangladesh converted pluripotent stem cells, or an "adult" version of early embryonic cells, back to a more "juvenile" version of cells with developmental potential, tantamount to fertilized eggs in their Day 3 developmental stage.
+
+Totipotent 8-cell stage embryo-like cells recreate the embryonic state of a fertilized egg after only three divisions, making them the youngest human cells acquired in vitro ever known, said Li Wenjuan, an expert from the Chinese Academy of Sciences, who is one of the corresponding authors of the paper.
+
+Cells described as "totipotent" mean that they have the potential to create all types of cells within embryonic and extra-embryonic tissues, according to the researchers.
+
+"These cells can not only differentiate into placental tissue but also potentially develop into more mature organs," Li said.
+
+The researchers also transplanted the 8-cell stage cells subcutaneously into adult mice, and those cells developed into complex teratomas, according to the study.
+
+The experiment was facilitated by the single-cell sequencing technology developed by Shenzhen-based BGI-Research. Ethical review had given clearance to the relevant study.
