@@ -1,10 +1,3 @@
-/*
-实验一：倒排索引的构建及向量空间模型检索
-实验内容
-•   对硬盘目录中的10个文本文件（doc01.txt – doc10.txt），在内存中建立倒排索引。
-•   构建检索系统，输入两个查询词，输出包含查询词的文件ID。
-*/
-
 //参考：https://blog.csdn.net/weixin_45730130/article/details/115967403
 
 #include <iostream>
